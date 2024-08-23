@@ -21,7 +21,8 @@ li {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #fff;
+  box-shadow: 0 0 2rem 0 rgba(33, 37, 41, 0.1);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -30,11 +31,10 @@ li {
 .navbar__logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
   text-decoration: none;
 }
 .navbar__logo a {
-  color: #fff;
+  color: #B899FA;
 }
 .navbar__nav-links {
   list-style: none;
@@ -81,7 +81,93 @@ li {
 }
 .navbar__username {
   font-size: 1rem;
-  color: #fff;
+  color: #B899FA;
+}
+
+.sidebar {
+  width: 265px;
+  height: 400px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.sidebar__nav {
+  flex: 1 1 auto;
+}
+.sidebar__link {
+  padding: 0.999rem 1.625rem;
+  color: #7C8EA6;
+  font-weight: 500;
+  display: block;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border-left: 3px solid transparent;
+}
+.sidebar__link i {
+  font-size: 1.1rem;
+  margin-right: 0.75rem;
+}
+.sidebar__link:hover {
+  color: #B899FA;
+}
+.sidebar__link-active {
+  color: #B899FA;
+}
+
+.main {
+  display: flex;
+  margin: 15px;
+}
+
+.main-content {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+}
+.section__information {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.section__container-img img {
+  width: 120px;
+  height: 120px;
+}
+.section__presentation {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+  width: 60%;
+}
+.section__presentation-profile {
+  padding: 10px;
+}
+.section__presentation-title {
+  color: #B899FA;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.section__presentation-description {
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
+  width: 60%;
+}
+.section__presentation-btn {
+  width: 15%;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px #B899FA;
+  cursor: pointer;
+  color: #B899FA;
+  margin-bottom: 10px;
+}
+.section__tasks {
+  margin-left: 3%;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+  width: 37%;
 }
 
 /*# sourceMappingURL=styles.css.map */

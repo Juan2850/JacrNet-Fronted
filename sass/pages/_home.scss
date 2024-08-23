@@ -1,4 +1,60 @@
+@use '../variables';
 @use '../navbar';
-@use '../sidebar'
+@use '../sidebar';
 
-  
+.main{
+    display: flex;
+    margin: 15px;
+}
+.main-content{
+    border-radius: 5px;
+    width:100%;
+}
+.section{
+    display: flex;
+    &__information{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__container-img{
+        & img{
+            width: 120px;
+            height: 120px;
+        }
+    }
+    &__presentation{
+        box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.15);
+        width: 60%;
+        &-profile{
+            padding: 10px;
+            
+        }
+        &-title{
+            color: variables.$color-primary;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        &-description{
+            color: variables.$dark-black;
+            font-family: variables.$font_roboto;
+            margin-bottom: 15px;
+            width: 60%;
+        }
+        &-btn{
+            width: 15%;
+            background-color: variables.$color-white;
+            padding: 5px;
+            border-radius: 5px;
+            border: solid 1px variables.$color-primary;
+            cursor: pointer;
+            color: variables.$color-primary;
+            margin-bottom: 10px;
+        }
+    }
+    &__tasks{
+        margin-left: 3%;
+        box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.15);
+        width: 37%;
+    }
+}

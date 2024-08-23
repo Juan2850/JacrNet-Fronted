@@ -1,6 +1,9 @@
 @use './initial';
+@use './variables';
+
 .navbar {
-    background-color: #333;
+    background-color: variables.$color-white;
+    box-shadow: 0 0 2rem 0 rgba(33, 37, 41, .1);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -8,10 +11,10 @@
     &__logo{
         font-size: 1.5rem;
         font-weight: bold;
-        color: #fff;
+        
         text-decoration: none;
         & a{
-            color: #fff;
+            color: variables.$color-primary;
         }
     }&__nav-links {
         list-style: none;
@@ -57,6 +60,6 @@
         }
     }&__username{
         font-size: 1rem;
-        color: #fff;
+        color: variables.$color-primary;
     }
   }
