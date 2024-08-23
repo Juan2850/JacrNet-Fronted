@@ -1,0 +1,62 @@
+@use './initial';
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        & a{
+            color: #fff;
+        }
+    }&__nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        
+    }&__dropdown{
+        position: relative;
+        &:hover &-content{
+            display: block;
+        }
+        &-content{
+            display: none;
+            position: absolute;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            top: 100%;
+            right: 0;
+            z-index: 1;
+            & li{
+                margin-bottom: 10px;
+            }
+            & a{
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                    color: #ccc;
+                }
+            }
+        }
+    }
+    &__profile-link{
+        display: flex;
+        align-items: center;
+        & img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }&__username{
+        font-size: 1rem;
+        color: #fff;
+    }
+  }
