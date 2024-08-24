@@ -14,7 +14,7 @@
         
         text-decoration: none;
         & a{
-            color: variables.$color-primary;
+            color: variables.$dark-black;
         }
     }&__nav-links {
         list-style: none;
@@ -22,6 +22,9 @@
         padding: 0;
         display: flex;
         align-items: center;
+        & li{
+            margin-right: 20px;
+        }
         
     }&__dropdown{
         position: relative;
@@ -60,6 +63,6 @@
         }
     }&__username{
         font-size: 1rem;
-        color: variables.$color-primary;
+        color: variables.$black-text;
     }
   }

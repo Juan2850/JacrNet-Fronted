@@ -87,22 +87,26 @@
                             <button class="section__presentation-btn">Ver perfil</button>
                         </div>
                         <div class="section__container-img">
-                            <img src="./assets/img/trabajo.jpg" alt="work" >
+                            <img src="./assets/img/work.jpg" alt="work" >
                         </div>
                    </div>
                     
                 
                 </div>
-                <div class="section__tasks">
+                <div class="tasks">
                     <div class="tasks__date">
-                        <div id="task__date--now"></div>
+                        <div id="date"></div>
                         <span>Vamos a cumplir tus objetivos</span>
                     </div>
                     <div class="tasks__add-task">
-                        <input type="text" id="tasks--add" placeholder="agregar una tarea">
-                        <i class="fas fa-plus-circle"></i>
+                        <input type="text" id="add" placeholder="agregar una tarea">
+                        <i id="enter" class="fas fa-plus-circle"></i>
                     </div>
-                    <div class="tasks"></div>
+                    <div class="tasks__task">
+                        <h3>Estas son tus tareas Pendientes</h3>
+                        <ul id="list">
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -110,6 +114,7 @@
     
     <!--===Icosn Awesome===-->
     <script src="https://kit.fontawesome.com/4f2c1ef62a.js" crossorigin="anonymous"></script>
-
+      <!--===JS===-->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
