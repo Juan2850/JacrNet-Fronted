@@ -31,6 +31,10 @@
             height: 120px;
             filter:brightness(1.1);
             mix-blend-mode: multiply;
+            @media (max-width: 480px) {
+               width: 80px;
+               height: 80px;
+            }
         }
     }
     &__presentation{
@@ -75,7 +79,12 @@
     @media (max-width: 1250px) {
         box-shadow: none;
         width:450px;
+
     } 
+    @media (max-width: 612px) {
+        width: 90%;
+         
+     } 
     & span {
         color: variables.$color-primary;
         font-weight: bold;
@@ -172,6 +181,17 @@
         width: 250px;
         height: 60px;
         margin: 20px;
+        @media (max-width: 612px) {
+           width: 160px;
+           margin: 10px;
+            
+        } 
+        @media (max-width: 386px) {
+            width: 90%;
+            margin: 5px 5px 5px 5px;
+            background-color:#9181e934 ;
+             
+         } 
       
     }
     &__item{
@@ -179,6 +199,9 @@
         padding:5px 5px 5px 5px;
         align-items: center;
         justify-content: center;
+        @media (max-width: 612px) {
+           padding: 2px;
+         } 
         & i{
             color: red;
             
@@ -194,6 +217,10 @@
             color: variables.$dark-blue;
             font-family: variables.$font_roboto;
             font-size: 13px;
+            @media (max-width: 612px) {
+                font-size: 15px;
+                 
+             } 
         }
     }
     
