@@ -210,7 +210,7 @@ li {
 }
 @media (max-width: 612px) {
   .tasks {
-    width: 90%;
+    width: 80%;
   }
 }
 .tasks span {
@@ -311,7 +311,7 @@ li {
     margin: 10px;
   }
 }
-@media (max-width: 386px) {
+@media (max-width: 480px) {
   .statistics__items {
     width: 90%;
     margin: 5px 5px 5px 5px;
