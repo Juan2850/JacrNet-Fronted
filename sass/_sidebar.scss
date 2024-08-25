@@ -6,6 +6,9 @@
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.15);
     margin-right: 20px;
     border-radius: 5px;
+    @media (max-width: 850px) {
+        display: none;
+    } 
     &__nav{
         //padding: 2rem 0;
         flex: 1 1 auto;

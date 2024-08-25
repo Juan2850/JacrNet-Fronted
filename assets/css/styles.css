@@ -94,6 +94,11 @@ li {
   margin-right: 20px;
   border-radius: 5px;
 }
+@media (max-width: 850px) {
+  .sidebar {
+    display: none;
+  }
+}
 .sidebar__nav {
   flex: 1 1 auto;
 }
@@ -131,10 +136,19 @@ li {
   display: flex;
   align-items: flex-start;
 }
+@media (max-width: 1250px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .section__information {
+  background-color: rgba(145, 129, 233, 0.2039215686);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 50px;
 }
 .section__container-img img {
   width: 120px;
@@ -143,8 +157,12 @@ li {
   mix-blend-mode: multiply;
 }
 .section__presentation {
-  background-color: rgba(145, 129, 233, 0.2039215686);
   width: 60%;
+}
+@media (max-width: 1250px) {
+  .section__presentation {
+    width: 100%;
+  }
 }
 .section__presentation-profile {
   padding: 10px;
@@ -161,9 +179,9 @@ li {
   width: 60%;
 }
 .section__presentation-btn {
-  width: 15%;
+  width: 100px;
   background-color: #fff;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   border: solid 1px #8a76ff;
   cursor: pointer;
@@ -177,6 +195,12 @@ li {
   width: 37%;
   padding: 10px;
   text-align: center;
+}
+@media (max-width: 1250px) {
+  .tasks {
+    box-shadow: none;
+    width: 450px;
+  }
 }
 .tasks span {
   color: #8a76ff;
@@ -253,6 +277,44 @@ li {
 .line-through {
   text-decoration: line-through;
   color: #8a76ff;
+}
+
+.statistics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  overflow: auto;
+  flex-direction: row;
+}
+.statistics__items {
+  width: 250px;
+  height: 60px;
+  margin: 20px;
+}
+.statistics__item {
+  display: flex;
+  padding: 5px 5px 5px 5px;
+  align-items: center;
+  justify-content: center;
+}
+.statistics__item i {
+  color: red;
+}
+.statistics__valor {
+  margin-left: 15px;
+}
+.statistics__valor h3 {
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
+}
+.statistics__valor p {
+  color: rgba(37, 95, 156, 0.9);
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=styles.css.map */
