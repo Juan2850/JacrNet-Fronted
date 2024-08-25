@@ -4,6 +4,7 @@ const add = document.getElementById('add')
 const list = document.getElementById('list');
 const btnEnter = document.getElementById('enter');
 
+
 let id;
 
 const check = 'fa-circle-check';
@@ -11,6 +12,21 @@ const uncheck = 'fa-circle';
 const lineThrough = 'line-through';
 let LIST;
 
+const navToggle = document.getElementById('open'),
+      navClose = document.getElementById('close');
+      navMenu = document.getElementById('nav-menu'); 
+
+if(navToggle){
+  navToggle.addEventListener('click', () =>{
+    navMenu.classList.add('show-menu')
+  } );
+}
+
+if(navClose){
+  navClose.addEventListener('click', () =>{
+    navMenu.classList.remove('show-menu')
+  })
+}
 //crear fecha
 const DATE = new Date();
 date.innerHTML = DATE.toLocaleDateString('es-CO', {weekday:'long', month:'short',day:'numeric'})

@@ -2,12 +2,21 @@
 @use './variables';
 
 .navbar {
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     background-color: variables.$color-white;
     box-shadow: 0 0 2rem 0 rgba(33, 37, 41, .1);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    & .close{
+        cursor: pointer;
+
+    }
+
     &__logo{
         font-size: 1.5rem;
         font-weight: bold;
