@@ -6,7 +6,7 @@
     top: 0;
     z-index: 1000;
     background-color: variables.$color-white;
-    box-shadow: 0 0 2rem 0 rgba(33, 37, 41, .1);
+    box-shadow: variables.$box-shadow;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -41,9 +41,10 @@
             display: block;
         }
         &-content{
+            box-shadow: variables.$box-shadow;
             display: none;
             position: absolute;
-            background-color: #333;
+            background-color: variables.$color-white;
             padding: 10px;
             border-radius: 5px;
             top: 100%;
@@ -53,10 +54,10 @@
                 margin-bottom: 10px;
             }
             & a{
-                color: #fff;
+                color: variables.$dark-black;
                 text-decoration: none;
                 &:hover{
-                    color: #ccc;
+                    color: variables.$dark-blue;
                 }
             }
         }

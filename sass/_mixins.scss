@@ -1,0 +1,11 @@
+@use './variables';
+@mixin button {
+    width: 100px;
+    background-color: variables.$color-white;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px variables.$color-primary;
+    cursor: pointer;
+    color: variables.$color-primary;
+    margin-bottom: 10px;
+}

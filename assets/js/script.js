@@ -16,12 +16,14 @@ const navToggle = document.getElementById('open'),
       navClose = document.getElementById('close');
       navMenu = document.getElementById('nav-menu'); 
 
+//abrir menu de navagación
 if(navToggle){
   navToggle.addEventListener('click', () =>{
     navMenu.classList.add('show-menu')
   } );
 }
 
+//Cerrar menu de navegación
 if(navClose){
   navClose.addEventListener('click', () =>{
     navMenu.classList.remove('show-menu')

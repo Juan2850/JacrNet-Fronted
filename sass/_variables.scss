@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*Colors*/
-
 $color-primary: #8a76ff;
 $color-white: #fff;
 $light-black-text: #292730;
@@ -13,6 +12,11 @@ $dark-very-dark: #afa1d7;
 $purple: #695CFE;
 $green: #00ff62;
 $red: #ff009d;
+
+$light-background:#9181e934;
+
+$box-shadow: 0 0 2rem 0 rgba(33, 37, 41, .1);
+$Dark-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.15);
 /*FONT */
 
 $font_roboto: "Roboto", sans-serif;

@@ -1,6 +1,7 @@
 @use '../variables';
 @use '../navbar';
 @use '../sidebar';
+@use '../mixins';
 
 .main{
     display: flex;
@@ -20,7 +21,7 @@
         align-items: center;
     } 
     &__information{
-        background-color: #9181e934;
+        background-color:variables.$light-background;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -60,21 +61,14 @@
             width: 60%;
         }
         &-btn{
-            width: 100px;
-            background-color: variables.$color-white;
-            padding: 10px;
-            border-radius: 5px;
-            border: solid 1px variables.$color-primary;
-            cursor: pointer;
-            color: variables.$color-primary;
-            margin-bottom: 10px;
+           @include mixins.button;
         }
     }
     
 }
 .tasks{   
     margin-left: 3%;
-    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.15);
+    box-shadow: variables.$Dark-box-shadow;
     width: 37%;
     padding: 10px;
     text-align: center;
@@ -191,7 +185,7 @@
         @media (max-width: 480px) {
             width: 90%;
             margin: 5px 5px 5px 5px;
-            background-color:#9181e934 ;
+            background-color:variables.$light-background;
              
          } 
       
@@ -205,7 +199,7 @@
            padding: 2px;
          } 
         & i{
-            color: red;
+            color: variables.$red;
             
         }
     }&__valor{
