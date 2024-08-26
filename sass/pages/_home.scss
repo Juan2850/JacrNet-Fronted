@@ -67,9 +67,12 @@
     
 }
 .tasks{   
+    height: 470px;
     margin-left: 3%;
     box-shadow: variables.$Dark-box-shadow;
     width: 37%;
+    overflow-y: scroll;
+    overflow-x: hidden;
     padding: 10px;
     text-align: center;
     @media (max-width: 1250px) {
